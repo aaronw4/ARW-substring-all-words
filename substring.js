@@ -2,7 +2,7 @@ var findSubstring = function(s, words) {
     let wordsLength = words[0].length
     let solution = []
 
-    for (i = 0; i < s.length; i++) {
+    for (i = 0; i < s.length - wordsLength*words.length + 1; i++) {
         let tempArr = [...words]
         let count = 0
         let index = 0 + i
